@@ -1,0 +1,7 @@
+POST http://localhost:8080/messages
+Content-Type: application/json
+
+{
+    "text": "Nice to have atleast 4 messages per user",
+    "id_user": "622a4f94bd3ddc6358011fae"
+}
