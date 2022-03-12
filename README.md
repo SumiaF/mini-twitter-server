@@ -72,56 +72,7 @@ Returns a message by id very timeyou do a fetch in the database.
 
 Adds a new message to the database.
 
-
-// Delete?
-**Example:**
-`https://elak-mini-twitter.herokuapp.com/find/message/@lucifer` would return you an array, with every element being a message object:
-
-```
-[
-{
-"img_url": "https://th.bing.com/th/id/OIP.sJhiNQZoqAiaGJusJ_M37wHaHa?pid=ImgDet&rs=1",
-"_id": "61e2962812b52f59de417a98",
-"text": "example test captainamerica",
-"user": {
-"username": "Julian",
-"handle": "@lucifer"
-},
-"date": "2022-01-14T17:45:43.774Z",
-"_twitter_message": 0
-},
-{
-"img_url": "https://th.bing.com/th/id/OIP.sJhiNQZoqAiaGJusJ_M37wHaHa?pid=ImgDet&rs=1",
-"_id": "61e2966c12b52f59de417a99",
-"text": "example test captainamerica",
-"user": {
-"username": "Julian",
-"handle": "@lucifer"
-},
-"date": "2022-01-14T17:45:43.774Z",
-"_twitter_message": 0
-},
-{
-"_id": "61e298e23c0a196ed42409b8",
-"text": "example with picture",
-"user": {
-"username": "Julian",
-"handle": "@lucifer"
-},
-"date": "2022-01-15T09:50:26.411Z",
-"img_url": "https://th.bing.com/th/id/OIP.sJhiNQZoqAiaGJusJ_M37wHaHa?pid=ImgDet&rs=1",
-"_twitter_message": 0
-}
-]
-
-
-### POST one message
-
-| URL  | Method  |
-| ------------ | ------------ |
-| https://wbs-twitter-clone.herokuapp.com/find/messages  | `POST`  |
-
-Adds a new message to the database. Requires `name`, `profile_pic`. `handle`. Handle can be left empty, and will upload a default image.
+<!-- Adds a new message to the database. Requires `name`, `id_user`.
 **Example:**
 Posting this data:
 ```{
@@ -138,3 +89,4 @@ profile_pic: 'https://tvline.com/wp-content/uploads/2016/03/freeform-sleeping-be
 handle: '@sleepingbeauty'
 }
 ]
+ -->
