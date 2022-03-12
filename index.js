@@ -40,6 +40,18 @@ app.route("/users/:id/messages").get(async (req, res) => {
   res.json(messages);
 });
 
+app.route("/me").get((req, res) => {
+  Users.count().exec(function (err, count) {
+    var random = Math.floor(Math.random() * count);
+    // Again query all users but only fetch one offset by random no.
+    Users.findOne()
+      .skip(random)
+      .exec(function (err, result) {
+        res.json(result);
+      });
+  });
+});
+
 app
   .route("/messages")
   .get(async (req, res) => {
@@ -58,7 +70,7 @@ app.route("/messages/:id").get(async (req, res) => {
 
 app.route("/*").get((req, res) => {
   res.send(
-    "<h1>Requested route is not a valid route please see Documentation</h1>"
+    "<h2>Requested route is not a valid route please see Documentation</h2>"
   );
 });
 connectTwitterDB().then(() => {
