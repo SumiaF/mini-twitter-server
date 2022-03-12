@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [GET all users](https://wbs-twitter-clone.herokuapp.com/users)
+- [GET all users](https://mini-twitter-server.herokuapp.com/users)
 - [GET a random user](https://wbs-twitter-clone.herokuapp.com/me)
 - [GET all messages ](https://wbs-twitter-clone.herokuapp.com/messages/)
 - [GET messages by handle name](https://wbs-twitter-clone.herokuapp.com/find/message/:id)
