@@ -74,9 +74,10 @@ Adds a new message to the database. Requires `name`, `id_user`.
 
 **Example:**
 Posting this data:
-```{
-    "text": "This is a test message with POSTMAN",
-    "id_user": "622a4f94bd3ddc6358011fae"
+``` 
+{
+ "text": "This is a test message with POSTMAN",
+ "id_user": "622a4f94bd3ddc6358011fae"
 }
 
  will return you the following data:
