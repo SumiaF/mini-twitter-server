@@ -9,9 +9,9 @@
 - [GET all messages from particular user ](https://mini-twitter-server.herokuapp.com//users/id/messages)
 - [GET a single message by id](https://mini-twitter-server.herokuapp.com/messages/id)
 - 
-- [GET messages by handle name](https://wbs-twitter-clone.herokuapp.com/find/message/:id) 
-- [POST one message](https://wbs-twitter-clone.herokuapp.com/messages)
-- [DELETE one message](https://wbs-twitter-clone.herokuapp.com/messages/:id)
+//- [GET messages by handle name](https://wbs-twitter-clone.herokuapp.com/find/message/:id) 
+//- [POST one message](https://wbs-twitter-clone.herokuapp.com/messages)
+//- [DELETE one message](https://wbs-twitter-clone.herokuapp.com/messages/:id)
 
 
 
@@ -23,21 +23,33 @@
 
 Returns all users in the database.
 
+
 ### GET one random user
 
-| URL                                        | Method |
-| ------------------------------------------ | ------ |
-| https://wbs-twitter-clone.herokuapp.com/me | `GET`  |
+| URL                                          | Method |
+| -------------------------------------------- | ------ |
+| https://mini-twitter-server.herokuapp.com/me | `GET`  |
 
 Returns random user very timeyou do a fetch in the database.
 
-### GET all messages
+
+### GET a single user by id
 
 | URL                                               | Method |
 | ------------------------------------------------- | ------ |
-| https://wbs-twitter-clone.herokuapp.com/messages/ | `GET`  |
+| https://mini-twitter-server.herokuapp.com/user/id | `GET`  |
+
+Returns a user by id very timeyou do a fetch in the database.
+
+
+### GET all messages
+
+| URL                                                | Method |
+| -------------------------------------------------- | ------ |
+| https://mini-twitter-server.herokuapp.com/messages | `GET`  |
 
 Returns all messages pesent in database
+
 
 ### GET all messages belonging to one common user handle/unique id
 
