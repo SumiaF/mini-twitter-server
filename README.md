@@ -70,23 +70,21 @@ Returns a message by id very timeyou do a fetch in the database.
 | --------------------------------------------------- | ------- |
 | https://mini-twitter-server.herokuapp.com/messages  | `POST`  |
 
-Adds a new message to the database.
+Adds a new message to the database. Requires `name`, `id_user`.
 
-<!-- Adds a new message to the database. Requires `name`, `id_user`.
 **Example:**
 Posting this data:
 ```{
-"name": "Here's an example message being submitted",
-"profile_pic": "",
-"handle": @sleepingbeauty
+    "text": "This is a test message with POSTMAN",
+    "id_user": "622a4f94bd3ddc6358011fae"
 }
 
  will return you the following data:
-[
-_id: new ObjectId("61e1e679f9d6a781f2ba03ef"),
-name: 'Tanja',
-profile_pic: 'https://tvline.com/wp-content/uploads/2016/03/freeform-sleeping-beauty-series.jpg',
-handle: '@sleepingbeauty'
+{
+"text": "This is a test message with POSTMAN",
+"id_user": "622a4f94bd3ddc6358011fae",
+"_id": "622c924ec9d516f4f8418706",
+"createdAt": "2022-03-12T12:30:06.504Z",
+"updatedAt": "2022-03-12T12:30:06.504Z",
+"__v": 0
 }
-]
- -->
