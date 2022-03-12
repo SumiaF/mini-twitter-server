@@ -3,17 +3,23 @@
 ## Table of Contents
 
 - [GET all users](https://mini-twitter-server.herokuapp.com/users)
-- [GET a random user](https://wbs-twitter-clone.herokuapp.com/me)
-- [GET all messages ](https://wbs-twitter-clone.herokuapp.com/messages/)
-- [GET messages by handle name](https://wbs-twitter-clone.herokuapp.com/find/message/:id)
+- [GET a random user](https://mini-twitter-server.herokuapp.com/me)
+- [GET a single user by id](https://mini-twitter-server.herokuapp.com/user/id)
+- [GET all messages ](https://mini-twitter-server.herokuapp.com/messages)
+- [GET all messages from particular user ](https://mini-twitter-server.herokuapp.com//users/id/messages)
+- [GET a single message by id](https://mini-twitter-server.herokuapp.com/messages/id)
+- 
+- [GET messages by handle name](https://wbs-twitter-clone.herokuapp.com/find/message/:id) 
 - [POST one message](https://wbs-twitter-clone.herokuapp.com/messages)
 - [DELETE one message](https://wbs-twitter-clone.herokuapp.com/messages/:id)
 
+
+
 ### GET all users
 
-| URL                                           | Method |
-| --------------------------------------------- | ------ |
-| https://wbs-twitter-clone.herokuapp.com/users | `GET`  |
+| URL                                             | Method |
+| ----------------------------------------------- | ------ |
+| https://mini-twitter-server.herokuapp.com/users | `GET`  |
 
 Returns all users in the database.
 
