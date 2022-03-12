@@ -30,7 +30,7 @@ app
   });
 
 app.route("/users/:id").get(async (req, res) => {
-  const user = await Users.findById(req.params.id, "_id name email");
+  const user = await Users.findById(req.params.id, "_id name email profilePic");
   res.json(user);
 });
 

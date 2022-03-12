@@ -5,4 +5,5 @@ Content-Type: application/json
 "name": "jina",
 "email": "asdas@asdd.com",
 "password" : "sdcvggbgfb"
+"profilePic": "girl1"
 }

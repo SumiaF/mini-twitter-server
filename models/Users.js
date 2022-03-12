@@ -5,6 +5,7 @@ const UsersSchema = new mongoose.Schema({
   name: { required: true, type: String },
   email: { required: true, type: String },
   password: { required: true, type: String },
+  profilePic: { required: true, type: String },
 });
 
 // model is the tool we use to interact with DB
