@@ -4,7 +4,7 @@
 
 - [GET all users](https://mini-twitter-server.herokuapp.com/users)
 - [GET a random user](https://mini-twitter-server.herokuapp.com/me)
-- [GET a single user by id](https://mini-twitter-server.herokuapp.com/user/id)
+- [GET a single user by id](https://mini-twitter-server.herokuapp.com/user/:id)
 - [GET all messages ](https://mini-twitter-server.herokuapp.com/messages)
 - [GET all messages from particular user ](https://mini-twitter-server.herokuapp.com//users/id/messages)
 - [GET a single message by id](https://mini-twitter-server.herokuapp.com/messages/id)
