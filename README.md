@@ -90,12 +90,30 @@ Posting this data:
 "__v": 0
 }
 
-## Random user from database
-| URL  | Method  |
-| ------------ | ------------ |
-| https://mini-twitter-server.herokuapp.com/me  | `GET`  |
+## All messages from database
+`https://mini-twitter-server.herokuapp.com/messages` would return you an array, with every element being a message object:
 
-Returns a random user from the database.
+[
+{
+"_id": "622c924ec9d516f4f8418706",
+"text": "This is a test message with POSTMAN",
+"id_user": "622a4f94bd3ddc6358011fae",
+"createdAt": "2022-03-12T12:30:06.504Z",
+"updatedAt": "2022-03-12T12:30:06.504Z",
+"__v": 0
+},
+{
+"_id": "622c5b09b93444a58a13d383",
+"text": "Nice to have atleast 4 messages per user",
+"id_user": "622a4f94bd3ddc6358011fae",
+"createdAt": "2022-03-12T08:34:17.211Z",
+"updatedAt": "2022-03-12T08:34:17.211Z",
+"__v": 0
+},
+]
+
+## Random user from database
+`https://mini-twitter-server.herokuapp.com/messages` would return a random user from the database.
 {
 "_id": "622a4f94bd3ddc6358011fae",
 "name": "Jenn",
