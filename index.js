@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 8080;
-const connectTwitterDB = require("./models");
+const connectTwitterDB = require("./models/index");
 const Users = require("./models/Users");
 const Messages = require("./models/Messages");
 
