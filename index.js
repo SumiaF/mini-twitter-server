@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-require("dotenv").config();
+//require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 8080;
 const connectTwitterDB = require("./models/index");
