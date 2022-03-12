@@ -44,7 +44,7 @@ app.route("/me").get((req, res) => {
   Users.count().exec(function (err, count) {
     var random = Math.floor(Math.random() * count);
     // Again query all users but only fetch one offset by random no.
-    Users.findOne()
+    Users.findOne(null, "_id name email profilePic")
       .skip(random)
       .exec(function (err, result) {
         res.json(result);
