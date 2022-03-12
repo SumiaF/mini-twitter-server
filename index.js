@@ -19,7 +19,7 @@ app.use(cors());
 app
   .route("/users")
   .get(async (req, res) => {
-    const users = await Users.find({}, "_id name email");
+    const users = await Users.find({}, "_id name email profilePic");
 
     //TODO:ask if it is ok this way info
     res.json(users);
@@ -30,7 +30,7 @@ app
   });
 
 app.route("/users/:id").get(async (req, res) => {
-  const user = await Users.findById(req.params.id, "_id name email");
+  const user = await Users.findById(req.params.id, "_id name email profilePic");
   res.json(user);
 });
 
