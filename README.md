@@ -8,11 +8,7 @@
 - [GET all messages ](https://mini-twitter-server.herokuapp.com/messages)
 - [GET all messages from particular user ](https://mini-twitter-server.herokuapp.com//users/id/messages)
 - [GET a single message by id](https://mini-twitter-server.herokuapp.com/messages/id)
-- 
-//- [GET messages by handle name](https://wbs-twitter-clone.herokuapp.com/find/message/:id) 
-//- [POST one message](https://wbs-twitter-clone.herokuapp.com/messages)
-//- [DELETE one message](https://wbs-twitter-clone.herokuapp.com/messages/:id)
-
+- [POST one message](https://mini-twitter-server.herokuapp.com/messages)
 
 
 ### GET all users
@@ -53,9 +49,9 @@ Returns all messages pesent in database
 
 ### GET all messages belonging to one common user handle/unique id
 
-| URL                                                         | Method |
-| ----------------------------------------------------------- | ------ |
-| https://mini-twitter-server.herokuapp.com//users/id/messages| `GET`  |
+| URL                                                          | Method |
+| ------------------------------------------------------------ | ------ |
+| https://mini-twitter-server.herokuapp.com//users/id/messages | `GET`  |
 
 Returns all messages for a user whose `user_id` matches the `${id}` provided in the URL.
 
@@ -68,6 +64,13 @@ Returns all messages for a user whose `user_id` matches the `${id}` provided in 
 
 Returns a message by id very timeyou do a fetch in the database.
 
+### POST one message
+
+| URL                                                 | Method  |
+| --------------------------------------------------- | ------- |
+| https://mini-twitter-server.herokuapp.com/messages  | `POST`  |
+
+Adds a new message to the database.
 
 
 // Delete?
@@ -135,24 +138,3 @@ profile_pic: 'https://tvline.com/wp-content/uploads/2016/03/freeform-sleeping-be
 handle: '@sleepingbeauty'
 }
 ]
-### DELETE one message by id
-
-| URL  | Method  |
-| ------------ | ------------ |
-| hhttps://wbs-twitter-clone.herokuapp.com/messages({id}   | `DELETE`  |
-
-Deletes message whose `message_id` matches the `${id}` provided in the URL. Returns `true`
-
-## /me
-| URL  | Method  |
-| ------------ | ------------ |
-| https://wbs-twitter-clone.herokuapp.com/me  | `GET`  |
-
-Returns a random user from the database.
-data:
-[{
-_id: new ObjectId("61e1e679f9d6a781f2ba03ef"),
-name: 'Tanja',
-profile_pic: 'https://tvline.com/wp-content/uploads/2016/03/freeform-sleeping-beauty-series.jpg',
-handle: '@sleepingbeauty'
-}]
