@@ -89,3 +89,16 @@ Posting this data:
 "updatedAt": "2022-03-12T12:30:06.504Z",
 "__v": 0
 }
+
+## Random user from database
+| URL  | Method  |
+| ------------ | ------------ |
+| https://mini-twitter-server.herokuapp.com/me  | `GET`  |
+
+Returns a random user from the database.
+{
+"_id": "622a4f94bd3ddc6358011fae",
+"name": "Jenn",
+"email": "abc@gmail.com",
+"profilePic": "images\\man1.jpg"
+}
