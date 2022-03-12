@@ -35,9 +35,9 @@ Returns random user very timeyou do a fetch in the database.
 
 ### GET a single user by id
 
-| URL                                               | Method |
-| ------------------------------------------------- | ------ |
-| https://mini-twitter-server.herokuapp.com/user/id | `GET`  |
+| URL                                                | Method |
+| -------------------------------------------------- | ------ |
+| https://mini-twitter-server.herokuapp.com/user/:id | `GET`  |
 
 Returns a user by id very timeyou do a fetch in the database.
 
@@ -53,12 +53,24 @@ Returns all messages pesent in database
 
 ### GET all messages belonging to one common user handle/unique id
 
-| URL                                                      | Method |
-| -------------------------------------------------------- | ------ |
-| https://wbs-twitter-clone.herokuapp.com/find/message/:id | `GET`  |
+| URL                                                         | Method |
+| ----------------------------------------------------------- | ------ |
+| https://mini-twitter-server.herokuapp.com//users/id/messages| `GET`  |
 
 Returns all messages for a user whose `user_id` matches the `${id}` provided in the URL.
 
+
+### GET a single message by id
+
+| URL                                                   | Method |
+| ----------------------------------------------------- | ------ |
+| https://mini-twitter-server.herokuapp.com/messages/id | `GET`  |
+
+Returns a message by id very timeyou do a fetch in the database.
+
+
+
+// Delete?
 **Example:**
 `https://elak-mini-twitter.herokuapp.com/find/message/@lucifer` would return you an array, with every element being a message object:
 
